@@ -1,9 +1,9 @@
 //external libraries at the top
 const express = require("express");
 const cors = require("cors");
-//imports always got at the top. Import the contorler file
-// "require the path we set up to the contorller file"
-// simply import the controller file
+//imports always go at the top. Import the controller file
+// "require the path we set up to the controller file"
+//Simply import the controller file
 const movieCtrl = require("./ctrl/movieCtrl");
 
 const app = express();
