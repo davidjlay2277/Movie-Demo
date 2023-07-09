@@ -13,9 +13,12 @@ const errCallback = (err) => console.log(err.response.data);
 
 const getAllMovies = () =>
   axios.get(baseURL).then(moviesCallback).catch(errCallback);
+
 const createMovie = (body) =>
   axios.post(baseURL, body).then(moviesCallback).catch(errCallback);
+
 const deleteMovie = (id) =>
+//id, below, is a parameter, which we know becasue it is defined her and starts with a /
   axios.delete(`${baseURL}/${id}`).then(moviesCallback).catch(errCallback);
 const updateMovie = (id, type) =>
   axios
